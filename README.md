@@ -5,9 +5,9 @@ do celular), abre o `claude`, fecha o terminal, e a sessão continua lá trabalh
 Depois volta exatamente de onde parou.
 
 ```
-cc site        # cria (ou volta pra) a sessão "site", já com o claude aberto
-Ctrl-b d       # sai sem fechar nada
-cc             # lista as sessões abertas
+cc session-name   # cria (ou volta pra) a sessão "session-name", já com o claude aberto
+Ctrl-b d          # sai sem fechar nada
+cc                # lista as sessões abertas
 ```
 
 ## O que vem
@@ -38,7 +38,7 @@ exec $SHELL
 Primeira sessão:
 
 ```sh
-cc teste
+cc session-name
 ```
 
 Na primeira vez o `claude` pede login. Como a VPS não tem navegador, ele mostra um
@@ -55,13 +55,13 @@ export CC_DIR=~/projetos     # coloque no ~/.bashrc pra ficar fixo
 | Comando | Efeito |
 |---|---|
 | `cc` | lista as sessões |
-| `cc <nome>` | entra na sessão; se não existe, cria com o `claude` aberto |
+| `cc session-name` | entra na sessão; se não existe, cria com o `claude` aberto |
 | `Ctrl-b d` | desconecta (a sessão continua rodando) |
 | `Ctrl-b \|` / `Ctrl-b -` | divide a tela na vertical / horizontal |
 | `Ctrl-b r` | recarrega o `tmux.conf` |
 | `tmux kill-session -t <nome>` | fecha uma sessão de vez |
 
-Dentro do tmux, `cc outro` troca de sessão em vez de abrir uma dentro da outra.
+Dentro do tmux, `cc outra-session-name` troca de sessão em vez de abrir uma dentro da outra.
 
 Quando o `claude` termina (você digita `/exit`), a sessão do tmux fecha junto.
 

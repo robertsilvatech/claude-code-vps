@@ -67,5 +67,5 @@ done
 echo ""
 echo "✅ pronto. Próximos passos:"
 echo "   exec \$SHELL          # recarrega o shell"
-echo "   cc meu-projeto       # abre o claude numa sessão tmux (faz login na 1ª vez)"
-echo "   Ctrl-b d             # sai sem fechar; 'cc meu-projeto' volta pra ela"
+echo "   cc session-name      # abre o claude numa sessão tmux (faz login na 1ª vez)"
+echo "   Ctrl-b d             # sai sem fechar; 'cc session-name' volta pra ela"

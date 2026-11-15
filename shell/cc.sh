@@ -1,9 +1,9 @@
 # cc.sh — sessões do Claude Code no tmux, uma por nome. Funciona em bash e zsh.
 # Carregado pelo ~/.bashrc / ~/.zshrc (o install.sh adiciona a linha `source`).
 #
-#   cc            lista as sessões abertas (cc ls também)
-#   cc <nome>     entra na sessão "nome"; se não existir, cria já rodando `claude`
-#                 (conversa nova) em $CC_DIR (padrão: $HOME)
+#   cc               lista as sessões abertas (cc ls também)
+#   cc session-name  entra na sessão "session-name"; se não existir, cria já rodando `claude`
+#                    (conversa nova) em $CC_DIR (padrão: $HOME)
 #
 # A sessão sobrevive à queda do SSH. Ctrl-b d desconecta sem matar nada.
 # Dentro do tmux não dá pra aninhar: cria a sessão (se preciso) e troca pra ela.
