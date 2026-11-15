@@ -59,7 +59,7 @@ export CC_DIR=~/projetos     # coloque no ~/.bashrc pra ficar fixo
 | `Ctrl-b d` | desconecta (a sessão continua rodando) |
 | `Ctrl-b \|` / `Ctrl-b -` | divide a tela na vertical / horizontal |
 | `Ctrl-b r` | recarrega o `tmux.conf` |
-| `tmux kill-session -t <nome>` | fecha uma sessão de vez |
+| `tmux kill-session -t session-name` | fecha uma sessão de vez |
 
 Dentro do tmux, `cc outra-session-name` troca de sessão em vez de abrir uma dentro da outra.
 
